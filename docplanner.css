@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0px 170px;
+}
+header {
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 250px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 40%;
+}
+.dropdown {
+  position: absolute;
+  background-color: white;
+  display: none;
+  width: 200px;
+  list-style: none;
+  padding: 20px;
+  left: 0;
+  color: #ababab;
+}
+.dropdown li {
+  padding: 10px;
+  /*background-color:#ababab ; */
+}
+.navigation-list li:hover {
+  color: #00b39b;
+}
+.dropdown li:hover {
+  background-color: #dadada4f;
+  color: #00b39b;
+}
+.dropdown-btn {
+  position: relative;
+}
+.dropdown-btn:hover .dropdown {
+  display: block;
+}
+
+/******************   Intro doc style  ******************/
+
+.intro-doc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/***************  information section     ******************/
+.informations {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.doctors {
+  background-color: #5190e2;
+}
+.patients {
+  background-color: #00ccb1;
+}
+.clinics {
+  background-color: #1b2734;
+}
+.card-style {
+  width: 28%;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  color: white;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.card-style img {
+  width: 30px;
+}
+
+/* .mylog{ */
+/* display: flex; */
+/* justify-content: center; */
+/* } */
+
+.imglogo {
+  display: block;
+  padding-top: 150px;
+  max-width: 5%;
+  bottom: 5%;
+}
+h1 {
+  text-align: center;
+  color: #00b39b;
+  font-size: 2.125rem;
+  font-family: "Roboto", sans-serif;
+}
+.mytext {
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  padding-top: 40px;
+}
+.mytext p {
+  padding-right: 20px;
+}
+select {
+  background-color: transparent;
+  border: transparent;
+  outline: 0;
+  font-size: 20px;
+}
+
+.global {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.usss {
+  color: #00b39b;
+}
+h2 {
+  color: #00b39b;
+  font-family: "Roboto", sans-serif;
+  width: 35%;
+}
+h3 {
+  color: #00b39b;
+  font-family: "Roboto", sans-serif;
+  width: 25%;
+}
+ul {
+  list-style: none;
+}
+.docgroup {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.docgroup img {
+  -webkit-filter: grayscale(100%);
+}
+.docgroup img:hover {
+  -webkit-filter: none;
+}
+button {
+  background-color:#499FF3;
+  color: white;
+  border-radius: 1px;
+  border: transparent;
+  padding: 10px;
+  font-size:100%;
+}
+
+.voyage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.forever {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+}
+.bigg {
+  margin: 50px -170px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #dbf7f6;
+  height: 600px;
+  background-image: url(https://www.docplanner.com/img/logo.png) ;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position-y: 300px;
+  background-position-x: 100px;
+}
+.cardgo {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  font-size: 15px;
+}
+.health {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+#todo {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sound{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 35px;
+  font-family:"Roboto", sans-serif ;
+  padding:30px;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: turquoise;
+  }
+  .informations {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card-style {
+    width: 80%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
